@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anuradha Kadam | Portfolio</title>
+
+  <style>
+    /* ===== GLOBAL ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0d0d0d, #3c0066);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(30, 0, 50, 0.9);
+      padding: 0 2rem;
+      height: 70px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #d3a6ff;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      width: 60%;
+      justify-content: space-between;
+    }
+
+    .nav-links li {
+      flex: 1;
+      text-align: center;
+    }
+
+    .nav-links a {
+      display: block;
+      padding: 1rem 0;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      background-color: #9b30ff;
+      color: #fff;
+    }
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 120px 10%;
+      min-height: 100vh;
+      gap: 3rem;
+    }
+
+    .hero-left {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .photo {
+      width: 380px; /* increased size */
+      animation: float 3s ease-in-out infinite;
+      transition: 0.4s;
+    }
+
+    .photo:hover {
+      transform: scale(1.05);
+    }
+
+    /* Floating Animation */
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .hero-right {
+      flex: 1;
+      animation: slideIn 1s ease forwards;
+      opacity: 0;
+    }
+
+    /* Slide animation from right */
+    @keyframes slideIn {
+      0% { transform: translateX(100px); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+
+    .hero-right h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-right span {
+      color: #c17dff;
+    }
+
+    .hero-right h2 {
+      font-size: 1.3rem;
+      color: #c5b3e6;
+      margin-bottom: 1rem;
+    }
+
+    .hero-right p {
+      font-size: 1rem;
+      color: #ddd;
+      margin-bottom: 1.5rem;
+      max-width: 500px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #9b30ff;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #d084ff;
+      transform: scale(1.05);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .photo {
+        width: 280px;
+      }
+
+      .hero-right {
+        animation: slideIn 1s ease forwards;
+        opacity: 1;
+      }
+
+      .nav-links {
+        width: 100%;
+      }
+
+      .nav-links li a {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="logo">Anuradha Kadam</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-left">
+      <img src="images/anuradha.png" alt="Anuradha Kadam" class="photo">
+    </div>
+    <div class="hero-right">
+      <h1>Hi, I'm <span>Anuradha Dhondiram Kadam</span></h1>
+      <h2>Aspiring Software Engineer | Exploring AI & Machine Learning</h2>
+      <p>Welcome to my portfolio! I’m passionate about coding, creativity, and building intelligent solutions that merge software and AI.</p>
+      <a href="C:\PRACTICALS\PROJECTS\Portfolio\images\Anuradha Kadam  Resume.pdf" download class="btn">📄 Download Resume</a>
+    </div>
+  </section>
+</body>
+</html>

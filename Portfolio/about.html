@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Anuradha Kadam</title>
+
+  <style>
+    /* ===== GLOBAL ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0d0d0d, #3c0066);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(30, 0, 50, 0.9);
+      padding: 0 2rem;
+      height: 70px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #d3a6ff;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      width: 60%;
+      justify-content: space-between;
+    }
+
+    .nav-links li {
+      flex: 1;
+      text-align: center;
+    }
+
+    .nav-links a {
+      display: block;
+      padding: 1rem 0;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      background-color: #9b30ff;
+      color: #fff;
+    }
+
+    /* ===== ABOUT CARD ===== */
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding-top: 80px;
+    }
+
+    .about-card {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      padding: 2.5rem;
+      width: 80%;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(155, 48, 255, 0.3);
+      animation: fadeUp 1s ease;
+    }
+
+    @keyframes fadeUp {
+      0% { transform: translateY(40px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    .about-card h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #d3a6ff;
+    }
+
+    .about-card p {
+      color: #ddd;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .about-card ul {
+      list-style: none;
+      text-align: left;
+      color: #fff;
+      font-size: 1rem;
+      margin: 0 auto;
+      max-width: 400px;
+    }
+
+    .about-card li {
+      background: rgba(155, 48, 255, 0.15);
+      padding: 0.7rem 1rem;
+      border-radius: 10px;
+      margin-bottom: 0.6rem;
+      transition: 0.3s;
+    }
+
+    .about-card li:hover {
+      transform: translateX(5px);
+      background: rgba(155, 48, 255, 0.3);
+    }
+
+    @media (max-width: 700px) {
+      .about-card {
+        width: 90%;
+        padding: 2rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">Anuradha Kadam</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="content">
+    <div class="about-card">
+      <h1>About Me</h1>
+      <p>
+        I'm a Computer Science student passionate about learning new technologies
+        and exploring Artificial Intelligence and Machine Learning. I love
+        creating software solutions that solve real-world problems and bring
+        innovation to life.
+      </p>
+      <ul>
+        <li>🎓 B.Tech in Computer Science</li>
+        <li>💡 Interests: AI, Machine Learning, Web Development</li>
+        <li>🏫 College: [Your College Name]</li>
+        <li>📍 Location: [Your City]</li>
+      </ul>
+    </div>
+  </section>
+</body>
+</html>
